@@ -26,5 +26,6 @@ There seems to be a bug with the AWS SDK that means it can crash Unity if there 
 
 *How do I set up AWS permissions correctly?*
 
-* Make sure you have a Cognito identity pool set up with unauthorised access enables (i.e. non logged in users)
+* Make sure you have a Cognito identity pool set up with unauthorised access enabled (i.e. non logged in users)
 * in IAM create a new policy on `Cognito_*UnauthRole` that has permissions to perform actions `s3:PutObject` and `s3:PutObjectTagging` on your bucket.
+* The resource for this policy should be `"Resource": "arn:aws:s3:::your-bucket-name/*"`
