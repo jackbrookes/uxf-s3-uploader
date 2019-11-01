@@ -10,7 +10,7 @@ Note: Requires Unity 2018 or newer.
 
 1. Add the latest [UXF package](https://github.com/jackbrookes/unity-experiment-framework/releases/latest) to your project
 2. Add the latest [AWS Mobile SDK for Unity](https://docs.aws.amazon.com/mobile/sdkforunity/developerguide/what-is-unity-plugin.html) to your project (this only requires the S3 package)
-3. Edit `s3_credentials.asset` with your credentials for AWS (or create new credentials: right click in the project panel -> create -> UXF_S3 -> Credentials)
+3. Edit `s3_credentials.asset` with your credentials for AWS (or create new credentials: right click in the project panel -> create -> UXF_S3 -> Credentials). You can create/find your credentials in AWS Cognito. Find instructions in the AWS Mobile SDK for Unity documentation.
 4. Add the `[UXF_S3_Uploader]` prefab to your scene.
 5. Write your bucket name in the `S3Uploader` component.
 6. In your `UXF.FileIOManager` component, add a new event to `OnWriteFile`, reference your `S3Uploader` component and select the `Upload` method. This means that files will be uploaded as soon a they are created.
