@@ -2,6 +2,8 @@
 
 This is a Unity package that allows experiments built in UXF to upload their files to an Amazon Web Services S3 bucket.
 
+Learn more about UXF [here](https://github.com/immersivecognition/unity-experiment-framework).
+
 To use this in your project download the latest [Release](https://github.com/jackbrookes/uxf-s3-uploader/releases/latest)
 
 ## Setup
@@ -9,7 +11,7 @@ To use this in your project download the latest [Release](https://github.com/jac
 Note: Requires Unity 2018 or newer.
 
 1. Add the latest [UXF package](https://github.com/jackbrookes/unity-experiment-framework/releases/latest) to your project
-2. Add the latest [AWS Mobile SDK for Unity](https://docs.aws.amazon.com/mobile/sdkforunity/developerguide/what-is-unity-plugin.html) to your project (this only requires the S3 package)
+2. Add the latest [AWS Mobile SDK for Unity](https://docs.aws.amazon.com/mobile/sdkforunity/developerguide/what-is-unity-plugin.html) to your project (S3 package is required, others are optional)
 3. Edit `s3_credentials.asset` with your credentials for AWS (or create new credentials: right click in the project panel -> create -> UXF_S3 -> Credentials). You can create/find your credentials in AWS Cognito. Find instructions in the AWS Mobile SDK for Unity documentation.
 4. Add the `[UXF_S3_Uploader]` prefab to your scene.
 5. Write your bucket name in the `S3Uploader` component.
