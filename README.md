@@ -16,7 +16,7 @@ Note: Requires Unity 2018 or newer.
 4. Add the `[UXF_S3_Uploader]` prefab to your scene.
 5. Write your bucket name in the `S3Uploader` component.
 6. In your `UXF.FileIOManager` component, add a new event to `OnWriteFile`, reference your `S3Uploader` component and select the `Upload` method. This means that files will be uploaded as soon a they are created.
-7. If you have many files, your application could be quitting before they finish. So the `S3UploadEnforcer` can be used to ensure files are finished before quitting. To do this make sure the `UXF.Session.onSessionEnd` does not quit the application, and add the `S3UploadEnforcer.EnforceThenInvokeEvent` method to the event. Now you can go to the `S3UploadEnforcer` component of the prefab instance in your scene and set it to do whatever you want when all files have been safely uploaded (like quit the application).
+7. If you have many files, your application could be quitting before they finish uploading. So the `S3UploadEnforcer` can be used to ensure files are finished before quitting. To do this make sure the `UXF.Session.onSessionEnd` does not quit the application, and add the `S3UploadEnforcer.EnforceThenInvokeEvent` method to the event. Now you can go to the `S3UploadEnforcer` component of the prefab instance in your scene and set it to do whatever you want when all files have been safely uploaded (like quit the application).
 
 
 
