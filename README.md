@@ -1,3 +1,5 @@
+NOTE: This is now redundant with the introduction of UXF 2.0. This functionality is built-in to the UI system.
+
 # UXF AWS S3 Uploader
 
 This is a Unity package that allows experiments built in UXF to upload their files to an Amazon Web Services S3 bucket.
